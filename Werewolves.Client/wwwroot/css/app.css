@@ -1,0 +1,18 @@
+/* Minimal layout shims */
+html, body {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    touch-action: manipulation; /* Improve touch response */
+}
+
+/* Safe Area Insets for Mobile */
+.mud-main-content {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
+
+/* Scroll Locking helper if needed */
+.no-scroll {
+    overflow: hidden;
+}

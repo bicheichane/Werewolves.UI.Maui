@@ -1,0 +1,30 @@
+@using Werewolves.Client.Services
+@inject GameClientManager GameClient
+
+<MudContainer MaxWidth="MaxWidth.Small" Class="pa-4">
+    <MudText Typo="Typo.h5" Align="Align.Center" GutterBottom="true">Current Instruction</MudText>
+    
+    <!-- Placeholder for dynamic instruction rendering -->
+    <!-- For demo purposes, we show AssignRolesView if session exists, or a default message -->
+    @if (GameClient.ActiveSession != null)
+    {
+        <Werewolves.Client.Components.Game.Views.AssignRolesView />
+    }
+    else
+    {
+        <MudAlert Severity="Severity.Info">Waiting for instruction...</MudAlert>
+    }
+    
+</MudContainer>
+
+@code {
+    protected override void OnInitialized()
+    {
+        GameClient.StateChanged += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        GameClient.StateChanged -= StateHasChanged;
+    }
+}

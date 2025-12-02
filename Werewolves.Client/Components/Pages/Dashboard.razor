@@ -1,0 +1,29 @@
+@page "/dashboard"
+@using Werewolves.Client.Components.Game
+@using Werewolves.Client.Components.Game.DashboardTabs
+@using Werewolves.Client.Services
+@inject GameClientManager GameClient
+@inject NavigationManager NavManager
+
+<MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6" KeepPanelsAlive="true" Centered="true">
+    <MudTabPanel Text="Players" Icon="@Icons.Material.Filled.People">
+        <PlayerList />
+    </MudTabPanel>
+    <MudTabPanel Text="Action" Icon="@Icons.Material.Filled.PlayArrow">
+        <InstructionRenderer />
+    </MudTabPanel>
+    <MudTabPanel Text="Overview" Icon="@Icons.Material.Filled.Info">
+        <GameOverview />
+    </MudTabPanel>
+</MudTabs>
+
+@code {
+    protected override void OnInitialized()
+    {
+        if (GameClient.ActiveSession == null)
+        {
+            // Redirect to Lobby if no session
+            NavManager.NavigateTo("/");
+        }
+    }
+}

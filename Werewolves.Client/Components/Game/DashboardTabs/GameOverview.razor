@@ -1,0 +1,29 @@
+@using Werewolves.Client.Services
+@inject GameClientManager GameClient
+
+<MudPaper Class="pa-4">
+    <MudText Typo="Typo.h6">Game Stats</MudText>
+    <MudList T="string">
+        <MudListItem>
+            <MudText>Phase: <b>Day 1</b></MudText>
+        </MudListItem>
+        <MudListItem>
+            <MudText>Alive: <b>@GameClient.Players.Count</b></MudText>
+        </MudListItem>
+        <MudListItem>
+            <MudText>Dead: <b>0</b></MudText>
+        </MudListItem>
+    </MudList>
+</MudPaper>
+
+@code {
+    protected override void OnInitialized()
+    {
+        GameClient.StateChanged += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        GameClient.StateChanged -= StateHasChanged;
+    }
+}

@@ -1,0 +1,31 @@
+@using Werewolves.Client.Services
+@inject GameClientManager GameClient
+@inject ImageMap ImageMap
+
+<MudList T="string">
+    @foreach (var player in GameClient.Players)
+    {
+        <MudListItem>
+            <AvatarContent>
+                <!-- Placeholder for role icon, assuming hidden or generic for now -->
+                <MudAvatar Color="Color.Primary">@player.Substring(0, 1)</MudAvatar>
+            </AvatarContent>
+            <ChildContent>
+                <MudText>@player</MudText>
+                <MudText Typo="Typo.caption">Alive</MudText>
+            </ChildContent>
+        </MudListItem>
+    }
+</MudList>
+
+@code {
+    protected override void OnInitialized()
+    {
+        GameClient.StateChanged += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        GameClient.StateChanged -= StateHasChanged;
+    }
+}

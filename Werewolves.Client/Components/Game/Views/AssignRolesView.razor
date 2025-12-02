@@ -1,0 +1,44 @@
+@using Werewolves.Client.Services
+@inject GameClientManager GameClient
+@inject ImageMap ImageMap
+@inject ISnackbar Snackbar
+
+<MudContainer MaxWidth="MaxWidth.Small">
+    <MudText Typo="Typo.h6" GutterBottom="true">Assign Roles</MudText>
+    <MudText Typo="Typo.body2" Class="mb-4">Assign a role to each player. Inventory must match.</MudText>
+
+    <MudGrid>
+        @foreach (var player in GameClient.Players)
+        {
+            <MudItem xs="12" sm="6">
+                <MudSelect T="string" Label="@player" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+                    <MudSelectItem Value="@("Werewolf")">Werewolf</MudSelectItem>
+                    <MudSelectItem Value="@("Villager")">Villager</MudSelectItem>
+                    <MudSelectItem Value="@("Seer")">Seer</MudSelectItem>
+                </MudSelect>
+            </MudItem>
+        }
+    </MudGrid>
+
+    <MudPaper Class="pa-4 mt-4" Elevation="0" Outlined="true">
+        <MudText Typo="Typo.subtitle2">Inventory</MudText>
+        <MudChipSet T="string" ReadOnly="true">
+            <MudChip Text="Werewolf: 2" Color="Color.Error" />
+            <MudChip Text="Villager: 3" Color="Color.Success" />
+            <MudChip Text="Seer: 1" Color="Color.Info" />
+        </MudChipSet>
+    </MudPaper>
+
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true" Class="mt-4" OnClick="SubmitRoles">
+        Submit Roles
+    </MudButton>
+</MudContainer>
+
+@code {
+    private void SubmitRoles()
+    {
+        // TODO: Validate against inventory
+        // GameClient.ProcessInputAsync(new AssignRolesInput(...));
+        Snackbar.Add("Roles submitted (Mock)", Severity.Success);
+    }
+}

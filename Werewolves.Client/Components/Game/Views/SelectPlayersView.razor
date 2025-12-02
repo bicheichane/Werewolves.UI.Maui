@@ -1,0 +1,29 @@
+@using Werewolves.Client.Services
+@inject GameClientManager GameClient
+
+<MudContainer MaxWidth="MaxWidth.Small">
+    <MudText Typo="Typo.h6" GutterBottom="true">Select Players</MudText>
+    <MudText Typo="Typo.body2" Class="mb-4">Select the target(s) for your action.</MudText>
+
+    <MudList T="string" SelectionMode="SelectionMode.MultiSelection" @bind-SelectedValues="_selectedPlayers">
+        @foreach (var player in GameClient.Players)
+        {
+            <MudListItem Value="@player">
+                <MudText>@player</MudText>
+            </MudListItem>
+        }
+    </MudList>
+
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true" Class="mt-4" OnClick="SubmitSelection" Disabled="@(!_selectedPlayers.Any())">
+        Confirm Selection
+    </MudButton>
+</MudContainer>
+
+@code {
+    private IReadOnlyCollection<string> _selectedPlayers = new HashSet<string>();
+
+    private void SubmitSelection()
+    {
+        // GameClient.ProcessInputAsync(...)
+    }
+}

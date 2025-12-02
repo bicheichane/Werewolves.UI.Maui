@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using MudBlazor.Services;
+using Plugin.Maui.Audio;
+using Werewolves.Client.Services;
 
 #if WINDOWS
 using Microsoft.Maui.LifecycleEvents;
@@ -12,7 +15,6 @@ namespace Werewolves.Client
     {
         public static MauiApp CreateMauiApp()
         {
-            
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
@@ -24,41 +26,46 @@ namespace Werewolves.Client
             builder.Services.AddMauiBlazorWebView();
 
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
-    		builder.Logging.AddDebug();
+            builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Logging.AddDebug();
 #endif
 
-            // Add this block
+            // MudBlazor
+            builder.Services.AddMudServices();
+
+            // Audio
+            builder.Services.AddSingleton(AudioManager.Current);
+
+            // Game Services
+            builder.Services.AddSingleton<AudioMap>();
+            builder.Services.AddSingleton<ImageMap>();
+            builder.Services.AddSingleton<GameClientManager>();
+
 #if WINDOWS
-        builder.ConfigureLifecycleEvents(events =>
-        {
-            events.AddWindows(wndLifeCycleBuilder =>
+            builder.ConfigureLifecycleEvents(events =>
             {
-                wndLifeCycleBuilder.OnWindowCreated(window =>
+                events.AddWindows(wndLifeCycleBuilder =>
                 {
-                    // Get the native WinUI window handle
-                    var nativeWindow = window as Microsoft.UI.Xaml.Window;
-                    if (nativeWindow is null) return;
-
-                    // 3. SET THE SIZE (Width, Height)
-                    // Note: These are physical pixels. 
-                    // If your monitor is at 150% scale, 450px might look small.
-                    int newWidth = 400;
-                    int newHeight = 800;
-                    nativeWindow.AppWindow.Resize(new SizeInt32(newWidth, newHeight));
-
-					// Lock the window size by manipulating the presenter
-					if (nativeWindow.AppWindow.Presenter is OverlappedPresenter presenter)
+                    wndLifeCycleBuilder.OnWindowCreated(window =>
                     {
-                        presenter.IsResizable = false;
-                        presenter.IsMaximizable = false;
-                    }
+                        var nativeWindow = window as Microsoft.UI.Xaml.Window;
+                        if (nativeWindow is null) return;
+
+                        int newWidth = 400;
+                        int newHeight = 800;
+                        nativeWindow.AppWindow.Resize(new SizeInt32(newWidth, newHeight));
+
+                        if (nativeWindow.AppWindow.Presenter is OverlappedPresenter presenter)
+                        {
+                            presenter.IsResizable = false;
+                            presenter.IsMaximizable = false;
+                        }
+                    });
                 });
             });
-        });
 #endif
 
-			return builder.Build();
+            return builder.Build();
         }
     }
 }

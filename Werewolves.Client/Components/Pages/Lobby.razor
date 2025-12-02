@@ -1,0 +1,124 @@
+@page "/"
+@using MudBlazor
+@using Werewolves.Client.Services
+@inject GameClientManager GameClient
+@inject ImageMap ImageMap
+@inject ISnackbar Snackbar
+@inject NavigationManager NavManager
+
+<MudContainer MaxWidth="MaxWidth.Medium" Class="pa-4">
+    <MudText Typo="Typo.h4" GutterBottom="true">Lobby</MudText>
+
+    <!-- Roster Management -->
+    <MudPaper Class="pa-4 mb-4">
+        <MudText Typo="Typo.h6">Players (@_players.Count)</MudText>
+        
+        <MudForm @ref="_form">
+            <MudStack Row="true" Class="mb-4">
+                <MudTextField @bind-Value="_newPlayerName" Label="Player Name" Variant="Variant.Outlined" Margin="Margin.Dense" />
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="AddPlayer" Disabled="@string.IsNullOrWhiteSpace(_newPlayerName)">Add</MudButton>
+            </MudStack>
+        </MudForm>
+
+        <MudList T="string">
+            @for (int i = 0; i < _players.Count; i++)
+            {
+                var index = i;
+                var player = _players[i];
+                <MudListItem Dense="true">
+                    <div class="d-flex align-center justify-space-between width-100">
+                        <MudText>@player</MudText>
+                        <div>
+                            <MudIconButton Icon="@Icons.Material.Filled.ArrowUpward" Size="Size.Small" OnClick="@(() => MoveUp(index))" Disabled="@(index == 0)" />
+                            <MudIconButton Icon="@Icons.Material.Filled.ArrowDownward" Size="Size.Small" OnClick="@(() => MoveDown(index))" Disabled="@(index == _players.Count - 1)" />
+                            <MudIconButton Icon="@Icons.Material.Filled.Delete" Size="Size.Small" Color="Color.Error" OnClick="@(() => RemovePlayer(player))" />
+                        </div>
+                    </div>
+                </MudListItem>
+            }
+        </MudList>
+    </MudPaper>
+
+    <!-- Role Configuration (Mock Display) -->
+    <MudPaper Class="pa-4 mb-4">
+        <MudText Typo="Typo.h6">Roles</MudText>
+        <MudList T="string">
+            <MudListItem>
+                <AvatarContent>
+                    <MudImage Src="@ImageMap.GetRoleImage("Werewolf")" Width="32" Height="32" />
+                </AvatarContent>
+                <ChildContent>Werewolf (2)</ChildContent>
+            </MudListItem>
+            <MudListItem>
+                <AvatarContent>
+                    <MudImage Src="@ImageMap.GetRoleImage("Villager")" Width="32" Height="32" />
+                </AvatarContent>
+                <ChildContent>Villager (3)</ChildContent>
+            </MudListItem>
+             <MudListItem>
+                <AvatarContent>
+                    <MudImage Src="@ImageMap.GetRoleImage("Seer")" Width="32" Height="32" />
+                </AvatarContent>
+                <ChildContent>Seer (1)</ChildContent>
+            </MudListItem>
+        </MudList>
+    </MudPaper>
+
+    <MudButton Variant="Variant.Filled" Color="Color.Success" Size="Size.Large" FullWidth="true" OnClick="StartGame" Disabled="@(_players.Count < 3)">
+        Start Game
+    </MudButton>
+</MudContainer>
+
+@code {
+    private List<string> _players = new() { "Alice", "Bob", "Charlie", "Dave" };
+    private string _newPlayerName = string.Empty;
+    private MudForm _form;
+
+    private void AddPlayer()
+    {
+        if (!string.IsNullOrWhiteSpace(_newPlayerName))
+        {
+            _players.Add(_newPlayerName);
+            _newPlayerName = string.Empty;
+        }
+    }
+
+    private void RemovePlayer(string name)
+    {
+        _players.Remove(name);
+    }
+
+    private void MoveUp(int index)
+    {
+        if (index > 0)
+        {
+            var item = _players[index];
+            _players.RemoveAt(index);
+            _players.Insert(index - 1, item);
+        }
+    }
+
+    private void MoveDown(int index)
+    {
+        if (index < _players.Count - 1)
+        {
+            var item = _players[index];
+            _players.RemoveAt(index);
+            _players.Insert(index + 1, item);
+        }
+    }
+
+    private async Task StartGame()
+    {
+        try
+        {
+            // TODO: Pass actual config
+            await GameClient.StartGameAsync(_players);
+            NavManager.NavigateTo("/dashboard");
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Failed to start game: {ex.Message}", Severity.Error);
+        }
+    }
+}
