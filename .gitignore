@@ -6,3 +6,9 @@ Werewolves.Client/bin/
 Werewolves.Client/obj/
 
 Werewolves.Client/nuget.config
+
+Werewolves.UI.Maui.Client/bin/
+
+Werewolves.UI.Maui.Client/obj/
+
+Werewolves.UI.Maui.Tests/obj/

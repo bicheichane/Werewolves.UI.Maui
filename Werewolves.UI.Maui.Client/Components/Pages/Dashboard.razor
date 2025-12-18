@@ -1,0 +1,87 @@
+@page "/dashboard"
+@using Werewolves.UI.Maui.Client.Components.Game
+@using Werewolves.UI.Maui.Client.Components.Game.DashboardTabs
+@using Werewolves.Core.StateModels.Models
+@inject GameClientManager GameClient
+@inject NavigationManager NavManager
+@implements IDisposable
+
+<MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6" KeepPanelsAlive="true" Centered="true">
+    <MudTabPanel Text="Players" Icon="@Icons.Material.Filled.People">
+        <PlayerList />
+    </MudTabPanel>
+    <MudTabPanel Text="Action" Icon="@Icons.Material.Filled.PlayArrow">
+        <MudStack Row="true" Justify="Justify.Center" AlignItems="AlignItems.Center" Class="mb-4">
+            <MudIcon Icon="@Icons.Material.Filled.Timer" Size="Size.Small" />
+            <MudText Typo="Typo.h6">@_elapsed.ToString(@"mm\:ss")</MudText>
+        </MudStack>
+        <InstructionRenderer />
+        <!-- Audio Controls -->
+        <div class="d-flex justify-center pa-2">
+            <MudIconButton 
+                Icon="@(GameClient.IsMuted ? Icons.Material.Filled.VolumeOff : Icons.Material.Filled.VolumeUp)" 
+                OnClick="@(() => GameClient.ToggleMute())" 
+                Color="Color.Primary" />
+        </div>
+    </MudTabPanel>
+    <MudTabPanel Text="Overview" Icon="@Icons.Material.Filled.Info">
+        <GameOverview />
+    </MudTabPanel>
+</MudTabs>
+
+@code {
+    private DateTime _timerStart = DateTime.UtcNow;
+    private TimeSpan _elapsed = TimeSpan.Zero;
+    private System.Threading.Timer? _timer;
+    private ModeratorInstruction? _lastInstruction;
+
+    protected override void OnInitialized()
+    {
+        if (GameClient.ActiveSession == null)
+        {
+            // Redirect to Lobby if no session
+            NavManager.NavigateTo("/");
+            return;
+        }
+
+        // Initialize the last instruction reference
+        _lastInstruction = GameClient.CurrentInstruction;
+
+        // Subscribe to state changes to detect new instructions
+        GameClient.StateChanged += OnStateChanged;
+
+        // Start the periodic timer (updates every second)
+        _timer = new System.Threading.Timer(
+            callback: _ => UpdateTimer(),
+            state: null,
+            dueTime: TimeSpan.Zero,
+            period: TimeSpan.FromSeconds(1));
+    }
+
+    private void OnStateChanged()
+    {
+        var currentInstruction = GameClient.CurrentInstruction;
+
+        // Reset timer if instruction object reference changed
+        if (!ReferenceEquals(currentInstruction, _lastInstruction))
+        {
+            _timerStart = DateTime.UtcNow;
+            _elapsed = TimeSpan.Zero;
+            _lastInstruction = currentInstruction;
+        }
+
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void UpdateTimer()
+    {
+        _elapsed = DateTime.UtcNow - _timerStart;
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        GameClient.StateChanged -= OnStateChanged;
+        _timer?.Dispose();
+    }
+}

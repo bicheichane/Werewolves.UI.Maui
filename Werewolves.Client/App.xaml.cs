@@ -1,15 +1,31 @@
-﻿namespace Werewolves.Client
+﻿using Werewolves.Client.Services;
+
+namespace Werewolves.Client
 {
     public partial class App : Application
     {
-        public App()
+        private readonly IconMap _iconMap;
+        private readonly AudioMap _audioMap;
+
+        public App(IconMap iconMap, AudioMap audioMap)
         {
             InitializeComponent();
+            _iconMap = iconMap;
+            _audioMap = audioMap;
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new MainPage()) { Title = "Werewolves.Client" };
+            var window = new Window(new MainPage()) { Title = "Werewolves.Client" };
+            
+            // Validate assets on startup
+            window.Created += async (s, e) =>
+            {
+                await _iconMap.ValidateIconsAsync();
+                await _audioMap.ValidateAudioFilesAsync();
+            };
+
+            return window;
         }
     }
 }

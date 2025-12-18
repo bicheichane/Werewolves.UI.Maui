@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="../../Werewolves.Core/Werewolves.Core.GameLogic/Werewolves.Core.GameLogic.csproj" />
+  <Project Path="../../Werewolves.Core/Werewolves.Core.StateModels/Werewolves.Core.StateModels.csproj" />
   <Project Path="Werewolves.UI.MobileClient.csproj">
     <Deploy />
   </Project>

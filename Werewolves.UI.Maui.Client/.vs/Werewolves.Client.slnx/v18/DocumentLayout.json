@@ -1,0 +1,456 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\services\\gameclientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:services\\gameclientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9289D38-21BF-FA96-7FA8-BDC0256EA600}|..\\..\\Werewolves.Core\\Werewolves.Core.StateModels\\Werewolves.Core.StateModels.csproj|d:\\repos\\werewolves\\werewolves.core\\werewolves.core.statemodels\\models\\instructions\\assignrolesinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9289D38-21BF-FA96-7FA8-BDC0256EA600}|..\\..\\Werewolves.Core\\Werewolves.Core.StateModels\\Werewolves.Core.StateModels.csproj|d:\\repos\\werewolves\\werewolves.core\\werewolves.core.statemodels\\models\\moderatorinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59577EE0-7F8E-3EFC-2850-CAD146507842}|..\\..\\Werewolves.Core\\Werewolves.Core.GameLogic\\Werewolves.Core.GameLogic.csproj|d:\\repos\\werewolves\\werewolves.core\\werewolves.core.gamelogic\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\components\\game\\views\\assignrolesview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:components\\game\\views\\assignrolesview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9289D38-21BF-FA96-7FA8-BDC0256EA600}|..\\..\\Werewolves.Core\\Werewolves.Core.StateModels\\Werewolves.Core.StateModels.csproj|d:\\repos\\werewolves\\werewolves.core\\werewolves.core.statemodels\\enums\\soundeffectsenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\components\\pages\\lobby.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:components\\pages\\lobby.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\platforms\\windows\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:platforms\\windows\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\platforms\\maccatalyst\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:platforms\\maccatalyst\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\platforms\\ios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:platforms\\ios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\components\\game\\dashboardtabs\\playerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:components\\game\\dashboardtabs\\playerlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\components\\game\\instructionrenderer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:components\\game\\instructionrenderer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\components\\game\\views\\confirmationview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:components\\game\\views\\confirmationview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\components\\game\\dashboardtabs\\gameoverview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:components\\game\\dashboardtabs\\gameoverview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\services\\iconmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:services\\iconmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\documentation\\business-requirements.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:documentation\\business-requirements.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\documentation\\architecture.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:documentation\\architecture.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\components\\game\\views\\selectplayersview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:components\\game\\views\\selectplayersview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\components\\game\\views\\selectoptionsview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:components\\game\\views\\selectoptionsview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\werewolves.ui.mobileclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:werewolves.ui.mobileclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|d:\\repos\\werewolves\\werewolves.ui.maui\\werewolves.client\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{031B887E-B50C-BA2E-6A77-6635ACA62DB6}|Werewolves.UI.MobileClient.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 622,
+          "SelectedChildIndex": 27,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AssignRolesInstruction.cs",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.Core\\Werewolves.Core.StateModels\\Models\\Instructions\\AssignRolesInstruction.cs",
+              "RelativeDocumentMoniker": "..\\..\\Werewolves.Core\\Werewolves.Core.StateModels\\Models\\Instructions\\AssignRolesInstruction.cs",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.Core\\Werewolves.Core.StateModels\\Models\\Instructions\\AssignRolesInstruction.cs",
+              "RelativeToolTip": "..\\..\\Werewolves.Core\\Werewolves.Core.StateModels\\Models\\Instructions\\AssignRolesInstruction.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T02:43:45.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModeratorInstruction.cs",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.Core\\Werewolves.Core.StateModels\\Models\\ModeratorInstruction.cs",
+              "RelativeDocumentMoniker": "..\\..\\Werewolves.Core\\Werewolves.Core.StateModels\\Models\\ModeratorInstruction.cs",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.Core\\Werewolves.Core.StateModels\\Models\\ModeratorInstruction.cs",
+              "RelativeToolTip": "..\\..\\Werewolves.Core\\Werewolves.Core.StateModels\\Models\\ModeratorInstruction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T02:43:16.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.Core\\Werewolves.Core.GameLogic\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "..\\..\\Werewolves.Core\\Werewolves.Core.GameLogic\\Services\\GameService.cs",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.Core\\Werewolves.Core.GameLogic\\Services\\GameService.cs",
+              "RelativeToolTip": "..\\..\\Werewolves.Core\\Werewolves.Core.GameLogic\\Services\\GameService.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwE4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T02:31:39.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Components\\_Imports.razor",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\_Imports.razor",
+              "RelativeToolTip": "Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T02:29:23.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SoundEffectsEnum.cs",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.Core\\Werewolves.Core.StateModels\\Enums\\SoundEffectsEnum.cs",
+              "RelativeDocumentMoniker": "..\\..\\Werewolves.Core\\Werewolves.Core.StateModels\\Enums\\SoundEffectsEnum.cs",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.Core\\Werewolves.Core.StateModels\\Enums\\SoundEffectsEnum.cs",
+              "RelativeToolTip": "..\\..\\Werewolves.Core\\Werewolves.Core.StateModels\\Enums\\SoundEffectsEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T02:29:09.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Lobby.razor",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Pages\\Lobby.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Lobby.razor",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Pages\\Lobby.razor",
+              "RelativeToolTip": "Components\\Pages\\Lobby.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T02:29:09.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Platforms\\Windows\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Platforms\\Windows\\App.xaml.cs",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Platforms\\Windows\\App.xaml.cs",
+              "RelativeToolTip": "Platforms\\Windows\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T02:29:09.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Platforms\\MacCatalyst\\Program.cs",
+              "RelativeDocumentMoniker": "Platforms\\MacCatalyst\\Program.cs",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Platforms\\MacCatalyst\\Program.cs",
+              "RelativeToolTip": "Platforms\\MacCatalyst\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T02:29:09.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Platforms\\iOS\\Program.cs",
+              "RelativeDocumentMoniker": "Platforms\\iOS\\Program.cs",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Platforms\\iOS\\Program.cs",
+              "RelativeToolTip": "Platforms\\iOS\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T02:29:09.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Platforms\\Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "Platforms\\Android\\MainActivity.cs",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Platforms\\Android\\MainActivity.cs",
+              "RelativeToolTip": "Platforms\\Android\\MainActivity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T02:29:09.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PlayerList.razor",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\DashboardTabs\\PlayerList.razor",
+              "RelativeDocumentMoniker": "Components\\Game\\DashboardTabs\\PlayerList.razor",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\DashboardTabs\\PlayerList.razor",
+              "RelativeToolTip": "Components\\Game\\DashboardTabs\\PlayerList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T02:28:54.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "InstructionRenderer.razor",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\InstructionRenderer.razor",
+              "RelativeDocumentMoniker": "Components\\Game\\InstructionRenderer.razor",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\InstructionRenderer.razor",
+              "RelativeToolTip": "Components\\Game\\InstructionRenderer.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T02:28:54.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ConfirmationView.razor",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\Views\\ConfirmationView.razor",
+              "RelativeDocumentMoniker": "Components\\Game\\Views\\ConfirmationView.razor",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\Views\\ConfirmationView.razor",
+              "RelativeToolTip": "Components\\Game\\Views\\ConfirmationView.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T02:28:54.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GameOverview.razor",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\DashboardTabs\\GameOverview.razor",
+              "RelativeDocumentMoniker": "Components\\Game\\DashboardTabs\\GameOverview.razor",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\DashboardTabs\\GameOverview.razor",
+              "RelativeToolTip": "Components\\Game\\DashboardTabs\\GameOverview.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T02:28:53.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Dashboard.razor",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Pages\\Dashboard.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Dashboard.razor",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Pages\\Dashboard.razor",
+              "RelativeToolTip": "Components\\Pages\\Dashboard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-07T02:28:53.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IconMap.cs",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Services\\IconMap.cs",
+              "RelativeDocumentMoniker": "Services\\IconMap.cs",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Services\\IconMap.cs",
+              "RelativeToolTip": "Services\\IconMap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T02:28:53.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "business-requirements.md",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Documentation\\business-requirements.md",
+              "RelativeDocumentMoniker": "Documentation\\business-requirements.md",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Documentation\\business-requirements.md",
+              "RelativeToolTip": "Documentation\\business-requirements.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-03T00:45:15.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "architecture.md",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Documentation\\architecture.md",
+              "RelativeDocumentMoniker": "Documentation\\architecture.md",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Documentation\\architecture.md",
+              "RelativeToolTip": "Documentation\\architecture.md",
+              "ViewState": "AgIAADYBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-03T00:45:06.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SelectPlayersView.razor",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\Views\\SelectPlayersView.razor",
+              "RelativeDocumentMoniker": "Components\\Game\\Views\\SelectPlayersView.razor",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\Views\\SelectPlayersView.razor",
+              "RelativeToolTip": "Components\\Game\\Views\\SelectPlayersView.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T05:16:05.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SelectOptionsView.razor",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\Views\\SelectOptionsView.razor",
+              "RelativeDocumentMoniker": "Components\\Game\\Views\\SelectOptionsView.razor",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\Views\\SelectOptionsView.razor",
+              "RelativeToolTip": "Components\\Game\\Views\\SelectOptionsView.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T05:16:01.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AssignRolesView.razor",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\Views\\AssignRolesView.razor",
+              "RelativeDocumentMoniker": "Components\\Game\\Views\\AssignRolesView.razor",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Components\\Game\\Views\\AssignRolesView.razor",
+              "RelativeToolTip": "Components\\Game\\Views\\AssignRolesView.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T05:15:49.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameClientManager.cs",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Services\\GameClientManager.cs",
+              "RelativeDocumentMoniker": "Services\\GameClientManager.cs",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Services\\GameClientManager.cs",
+              "RelativeToolTip": "Services\\GameClientManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:52:28.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Werewolves.UI.MobileClient.csproj",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Werewolves.UI.MobileClient.csproj",
+              "RelativeDocumentMoniker": "Werewolves.UI.MobileClient.csproj",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\Werewolves.UI.MobileClient.csproj",
+              "RelativeToolTip": "Werewolves.UI.MobileClient.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-01T18:34:24.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "D:\\Repos\\Werewolves\\Werewolves.UI.Maui\\Werewolves.Client\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T18:28:07.186Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 651,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

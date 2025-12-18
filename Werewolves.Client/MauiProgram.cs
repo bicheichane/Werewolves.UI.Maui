@@ -38,7 +38,8 @@ namespace Werewolves.Client
 
             // Game Services
             builder.Services.AddSingleton<AudioMap>();
-            builder.Services.AddSingleton<ImageMap>();
+            builder.Services.AddSingleton<IconMap>();
+            builder.Services.AddSingleton<IGameService, GameServiceWrapper>();
             builder.Services.AddSingleton<GameClientManager>();
 
 #if WINDOWS
